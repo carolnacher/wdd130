@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Design-dot | Portfolio</title>
+    <link rel="stylesheet" href="styles/portfolio1.css">
+    
+    
+</head>
+
+<body>
+    <script>
+                    filterSelection("all") // Execute the function and show all columns
+            function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+            }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+    </script>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img class="logo"  src="images/designdot1.png" alt="Design-dot logo">
+            </a>  
+            <nav>
+                <a href="homepage.html"> Home </a>
+                <a href="TipsandGuides.html"> Tips & Guides  </a>
+                <a href="contactus.html">Contact Us</a>
+            </nav> 
+        </header>    
+    <h2>PORTFOLIO</h2>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Rooms')"> Rooms </button>
+      <button class="btn" onclick="filterSelection('Lights')"> Lights</button>
+      <button class="btn" onclick="filterSelection('Decorations')"> Decorations </button>
+    </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column Rooms">
+        <div class="content">
+          <img src="images/living1.jpg" alt="Houses" width="500" height="335">
+          <h4>Livings</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Rooms">
+        <div class="content">
+          <img src="images/loft.jpg" alt="Loft" style="width:100%">
+          <h4>Loft</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Rooms">
+        <div class="content">
+          <img src="images/WOOD.jpg" alt="WOOD" width="500" height="335">
+          <h4>kitchen</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column Lights">
+        <div class="content">
+          <img src="images/artefacto.jpg" alt="Car" width="500" height="325">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Lights">
+        <div class="content">
+          <img src="images/light1.jpg" alt="Car" width="500" height="325">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Lights">
+        <div class="content">
+          <img src="images/room.jpg" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column Decorations">
+        <div class="content">
+          <img src="images/3pillows.jpg" alt="People" width="500" height="450">
+          <h4> Decoration</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Decorations">
+        <div class="content">
+          <img src="images/carpet.jpg" alt="People" width="500" height="450">
+          <h4> Carpet </h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column Decorations">
+        <div class="content">
+          <img src="images/flower.jpg" alt="People" width="500" height="450">
+          <h4> Accessories Decoration </h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <footer>
+        <p> Design-dot &copy; 2023 - Carol Nacher </p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+             <img src="images/face1.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+             <img src="images/insta.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
