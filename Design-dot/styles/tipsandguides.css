@@ -47,10 +47,7 @@ nav a:hover{
     padding-top: 20px;
     z-index: 1;
 }
-.home-image{
-    margin: 0 auto;
-   
-}
+
 #living{
     display: grid;
     margin-top: -40px;
@@ -59,15 +56,16 @@ nav a:hover{
 }
 
 
-#livingroom {
+#sofa {
     grid-column: 1/4;
     grid-row: 1/3;
-    z-index: -1;
+    
 }    
 
 
 #livingroom-image{
     width: 100%;
+    height: 890px;
 }
 
 
@@ -129,40 +127,10 @@ footer {
 footer p a:hover {
     text-decoration: underline;
     color: #9BB282;
+    
 }  
 
 
-#text{
-    position: absolute;
-    top: 40%;
-    left: 71%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-   
-}
-
-#text h1{
-    text-align: left;
-    z-index: 1;
-    margin:0;
-    font-size: 65px;
-    justify-self: center;
-    grid-row: 2/3;
-    grid-column: 3/4;
-    font-family:"Aboreto";
-}
-
-#text h2{
-    text-align: left;
-    z-index: 1;
-    margin: 0;
-    color:rgb(224, 195, 6);
-    font-size: 60px;
-    grid-row: 2/3;
-    grid-column: 3/4;
-    font-family: "Aboreto";
-}
 
 #logo_link{
     padding-top: 2px;
@@ -171,36 +139,6 @@ footer p a:hover {
     align-self: flex-start;
 }
 
-.card-img2{
-    margin-left: 100px ;
-    height: 370px;
-    border: 3px solid #15616D;
-}
-.card-img3{
-    margin-left: 25px ;
-    height: 370px;
-    border: 3px solid #15616D;
-}
-.card-img1{
-    margin-right: 100px ;
-    height: 370px;
-    border: 3px solid #15616D;
-}
-.text1{
-    font-size: 25px;
-    font-family:"Aboreto";
-    align-self: center;
-    margin-right: 20px ;
-    height: 365px;
-}
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
-}
-
-main section img{
-    box-sizing: border-box;
-}
 
 #livingroom-image{
     display: grid;
@@ -215,20 +153,85 @@ main section img{
     z-index: 1;
 }    
 
-.home-image{
+.card-icon1{
+    align-self: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 50px;
+    
+}
+.card-icon2{
+    align-self: center;
+    margin-left: 35px;
+    margin-right: 15px;
+    height: 50px;
+   
+}
+.card-icon3{
+    align-self: center;
+    margin-left: 40px ;
+    height: 50px;
+    
+}
+
+.card-icon4{
+    align-self: center;
+    margin-left: 30px ;
+    margin-right: 30px;
+    height:50px;
+}
+.card-icon5{
+    align-self: center;
+    margin-left:22px;
+    margin-right: 10px ;
+    height: 50px;
+}
+
+
+main {
+    box-sizing: border-box;
+}
+.icons{
     margin-top: 200px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
 
 }
 
-.card-img, .mountains {
-    width: 100%;
-}
-             
+#text, p{
 
-p a {
-    padding: 0;
+    margin-left: 70px;
+    margin-right: 70px;
+    align-items: center;
+    font-size: 18px;
+    font-family:"Aboreto";
+    z-index: 1;
+    text-align: center;
+   
+}
+h4{
+    font-family:"Aboreto";
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+
 }
 
+h1{
+    margin-left: 580px;
+    margin-right: 600px;
+    color: #2A7826;
+    font-family:"Aboreto";
+    margin-top: 100px;
+    font-size: 22px;
+ 
+}
+
+.icons a :hover{
+    color: #9BB282;
+    text-decoration-line: underline;
+   
+}

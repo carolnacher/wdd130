@@ -130,14 +130,14 @@
  footer .social img{
      padding: 25px 20px;
      padding-bottom: 0;
-     width: 70px;
-     height: 50px;
+     width: 90px;
+     height: 70px;
  }
  
  
  footer{
      background-color: #2A7826;
-     color: #9BB282;
+     color:black;
      padding: 25px 50px;
      margin-top: 50px;
      display: flex;
@@ -160,7 +160,7 @@
 
  footer p a:hover {
      text-decoration: underline;
-     color:black;
+     color: #9BB282;
  }  
  
  #logo_link{
@@ -171,6 +171,6 @@
  }
  
  p a {
-     color:#9BB282;
+     color:black;
      padding: 0;
  }

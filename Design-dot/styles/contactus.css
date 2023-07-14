@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Athiti:wght@300&family=Marck+Script&family=Montserrat:wght@300&family=Shadows+Into+Light+Two&display=swap");
+
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.logo {
+  width: 200px;
+  padding-left: 30px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+
+.fondo {
+    z-index: -1;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 150px;
+}
+
+
+h1 {
+  color: #2a7826;
+  font-family: "Aboreto";
+  font-size: 60px;
+  margin-top: 90px;
+  z-index: 1;
+  text-align: center;
+}
+
+p {
+  color: #9bb282;
+}
+
+.contact-form {
+  background-color: #2a7826;
+  padding: 10px;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 250px;
+  z-index: 1;
+}
+
+input[type="text"],
+textarea {
+  width: 580px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #87a76f;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #87a76f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2a7826;
+}
